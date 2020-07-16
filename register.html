@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" id="fontawesome-css" href="css/fontawesome6e7a.css" type="text/css" media="all" />
+  <link rel='stylesheet' id='antreas-fontawesome-css' href='css/icon-fontawesome8a54.css?ver=1.0.0' type='text/css'
+    media='all' />
+  <link type="image/jpg" href="images/uploads/2019/06/ECS-logo-e1559539089668.jpg" rel="icon" />
+  <link rel="icon" href="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-32x32.jpg" sizes="16x16" />
+  <link rel="icon" href="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-192x192.jpg" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed"
+    href="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-180x180.jpg" />
+  <meta name="msapplication-TileImage" content="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-270x270.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+    }
+
+    .page-content {
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      background: #22c0e3;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      -o-justify-content: center;
+      -ms-justify-content: center;
+      -moz-justify-content: center;
+      -webkit-justify-content: center;
+      align-items: center;
+      -o-align-items: center;
+      -ms-align-items: center;
+      -moz-align-items: center;
+      -webkit-align-items: center;
+      font-family: 'Open Sans', sans-serif;
+      padding: 0 15px;
+    }
+
+    .form-v5-content {
+      background: #fff;
+      width: 100%;
+      max-width: 670px;
+      border-radius: 8px;
+      -o-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      margin: 175px 0;
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      font-weight: 400;
+      position: relative;
+      font-size: 18px;
+    }
+
+    .form-v5-content .form-detail {
+      padding: 30px 45px 30px 45px;
+      position: relative;
+    }
+
+    .form-detail h2 {
+      font-size: 25px;
+      text-align: center;
+      position: relative;
+      padding: 3px 0 20px;
+      margin-bottom: 40px;
+    }
+
+    .form-detail .form-row {
+      position: relative;
+    }
+
+    .form-detail label {
+      display: block;
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+
+    .form-detail .input-text {
+      margin-bottom: 26px;
+    }
+
+    .form-detail input {
+      width: 94.5%;
+      padding: 10.5px 15px;
+      border: 1px solid #e5e5e5;
+      appearance: unset;
+      -moz-appearance: unset;
+      -webkit-appearance: unset;
+      -o-appearance: unset;
+      -ms-appearance: unset;
+      outline: none;
+      -moz-outline: none;
+      -webkit-outline: none;
+      -o-outline: none;
+      -ms-outline: none;
+      border-radius: 4px;
+      -o-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    .form-detail i {
+      font-size: 14px;
+      color: #999;
+      right: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      font-family: fontawesome;
+    }
+
+    .form-detail .form-row-last {
+      text-align: center;
+    }
+
+    .form-detail .register:hover {
+      background: #2f73a3;
+    }
+
+    .form-detail .form-row-last input {
+      padding: 14px;
+    }
+
+    .form-detail .register {
+      font-size: 18px;
+      color: #fff;
+      background: #22c0e3;
+      border-radius: 5px;
+      -o-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      width: 180px;
+      box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+      -o-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+      -ms-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+      border: none;
+      margin: 19px 0 40px;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 567px) {
+      .form-detail i {
+        right: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-content">
+    <div class="form-v5-content">
+      <form class="form-detail" action="#" method="post">
+        <h2>Register Account Form</h2>
+        <div class="form-row">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="full-name" id="full-name" class="input-text" placeholder="Your Name" required="" />
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="form-row">
+          <label for="your-email">Your Email</label>
+          <input type="text" name="your-email" id="your-email" class="input-text" placeholder="Your Email" required=""
+            pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" />
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" class="input-text" placeholder="Your Password"
+            required="" />
+          <i class="fas fa-lock"></i>
+        </div>
+        <div class="form-row-last">
+          <input type="submit" name="register" class="register" value="Register" />
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

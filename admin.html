@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Easy Code - Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' id='wp-block-library-css' href='css/dist/block-library/style.min6e7a.css' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='wp-block-library-theme-css' href='css/dist/block-library/theme.min6e7a.css'
+        type='text/css' media='all' />
+    <link rel='stylesheet' id='fontawesome-css' href='css/fontawesome6e7a.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='cpo-companion-style-css' href='css/style6e7a.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='antreas-main-css' href='css/style8a54.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='jquery-lazyloadxt-spinner-css-css' href='css/jquery.lazyloadxt.spinner6e7a.css'
+        type='text/css' media='all' />
+    <script type='text/javascript' src='js/cookies6e7a.js?ver=5.2.7'></script>
+    <script type='text/javascript' src='js/html58a54.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery4a5f.js'></script>
+    <script type='text/javascript' src='js/jquery/jquery-migrate.min330a.js'></script>
+    <link rel="canonical" href="index.html" />
+    <link rel='shortlink' href='index.html' />
+    <link rel="https://theeventscalendar.com/" href="wp-json/tribe/events/v1/index.html" />
+    <link type="image/jpg" href="images/uploads/2019/06/ECS-logo-e1559539089668.jpg" rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta charset="UTF-8" />
+    <style type="text/css">
+        .broken_link,
+        a.broken_link {
+            text-decoration: line-through;
+        }
+    </style>
+    <style type="text/css" id="custom-background-css">
+        body.custom-background {
+            background-image: url("images/uploads/2018/10/background.jpg");
+            background-position: center top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <link rel="icon" href="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-32x32.jpg" sizes="16x16" />
+    <link rel="icon" href="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-192x192.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed"
+        href="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-180x180.jpg" />
+    <meta name="msapplication-TileImage"
+        content="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-270x270.jpg" />
+</head>
+
+<body class="home page-template-default page page-id-4 custom-background tribe-no-js  sidebar-none">
+    <div id="topbar" class="topbar">
+        <div class="container">
+            <div class="clear"></div>
+        </div>
+    </div>
+    <header id="header" class="header">
+        <div class="container">
+            <div id="logo" class="logo">
+                <h1 class="title site-title "><a href="index.html">Easy Code</a></h1>
+            </div>
+            <div id="menu-mobile-open" class=" menu-mobile-open menu-mobile-toggle"></div>
+            <ul id="menu-main" class="menu-main">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-normal">
+                    <a href="index.html"><span class="menu-link"><span class="menu-title">Home</span></span></a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-normal">
+                    <a href="our-mission.html"><span class="menu-link"><span class="menu-title">Our
+                                Mission</span></span></a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-normal"><a
+                        href="our-story.html"><span class="menu-link"><span class="menu-title">Our
+                                Services</span></span></a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-normal"><a
+                        href="contact.html"><span class="menu-link"><span class="menu-title">Contact</span></span></a>
+                </li>
+                <li
+                    class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-293 current_page_item menu-normal">
+                    <a href="admin.html"><span class="menu-link"><span class="menu-title">Admin</span></span></a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-normal"><a
+                        href="login.html"><span class="menu-link"><span class="menu-title">Login</span></span></a>
+                </li>
+            </ul>
+            <div class='clear'></div>
+        </div>
+    </header>
+    <section id="pagetitle" class="pagetitle dark" style="background-image:url(images/uploads/2018/10/about-3.jpg);">
+        <div class="pagetitle__overlay"></div>
+        <div class="container">
+            <h1 class="pagetitle-title heading">Admin</h1>
+            <div id="breadcrumb" class="breadcrumb"><a class="breadcrumb-link" href="index.html">Home</a><span
+                    class="breadcrumb-separator"></span><span class="breadcrumb-title">Admin</span>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #fff;">
+        <div class="container">
+            <br />
+            <h3 align="center">Load Excel Sheet</h3>
+            <br />
+            <div class="table-responsive">
+                <span id="message"></span>
+                <form method="post" id="load_excel_form" enctype="multipart/form-data">
+                    <table class="table">
+                        <tr>
+                            <td width="25%" align="right">Select Excel File</td>
+                            <td width="50%"><input type="file" name="select_excel" /></td>
+                            <td width="25%"><input type="submit" name="load" class="btn btn-primary" /></td>
+                        </tr>
+                    </table>
+                </form>
+                <br />
+                <div id="excel_area"></div>
+            </div>
+            <div class="button-container"><a href="register.html" class="button button-right">Add user</a></div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <section id="subfooter" class="subfooter">
+        <div class="container">
+            <div class="row"></div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="clear"></div>
+        <script>
+            (function (body) {
+                'use strict';
+                body.className = body.className.replace(/\btribe-no-js\b/, 'tribe-js');
+            })(document.body);
+        </script>
+        <div id="menu-mobile-close" class="menu-mobile-close menu-mobile-toggle"></div>
+        <ul id="menu-mobile" class="menu-mobile">
+            <li
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item menu-normal">
+                <a href="index.html"><span class="menu-link"><span class="menu-title">Home</span></span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-normal"><a
+                    href="our-mission.html"><span class="menu-link"><span class="menu-title">Our
+                            Mission</span></span></a>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-normal"><a
+                    href="our-story.html"><span class="menu-link"><span class="menu-title">Our
+                            Services</span></span></a>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-normal"><a
+                    href="contact.html"><span class="menu-link"><span class="menu-title">Contact</span></span></a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-normal"><a
+                    href="our-story.html"><span class="menu-link"><span class="menu-title">Our
+                            Services</span></span></a>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-normal"><a href="admin.html"><span
+                        class="menu-link"><span class="menu-title">Admin</span></span></a>
+            </li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-normal"><a href="login.html"><span
+                        class="menu-link"><span class="menu-title">Login</span></span></a>
+            </li>
+        </ul>
+
+        <link rel='stylesheet' id='antreas-fontawesome-css' href='css/icon-fontawesome8a54.css?ver=1.0.0'
+            type='text/css' media='all' />
+        <script type='text/javascript' src='js/comment-reply.min6e7a.js?ver=5.2.7'></script>
+        <script type='text/javascript' src='js/core8a54.js?ver=1.0.0'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var a3_lazyload_params = {
+                "apply_images": "1",
+                "apply_videos": "1"
+            };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='js/jquery.lazyloadxt.extra.min2c00.js?ver=1.9.2'></script>
+        <script type='text/javascript' src='js/jquery.lazyloadxt.srcset.min2c00.js?ver=1.9.2'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var a3_lazyload_extend_params = {
+                "edgeY": "0"
+            };
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='js/jquery.lazyloadxt.extend2c00.js?ver=1.9.2'></script>
+        <script type='text/javascript' src='js/wp-embed.min6e7a.js?ver=5.2.7'></script>
+        <script type='text/javascript' src='js/jquery-cycle28a54.js?ver=1.0.0'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#load_excel_form').on('submit', function (event) {
+                    event.preventDefault();
+                    $.ajax({
+                        url: "upload.php",
+                        method: "POST",
+                        data: new FormData(this),
+                        contentType: false,
+                        cache: false,
+                        processData: false,
+                        success: function (data) {
+                            $('#excel_area').html(data);
+                            $('table').css('width', '100%');
+                        }
+                    })
+                });
+            });
+        </script>
+</body>
+
+</html>

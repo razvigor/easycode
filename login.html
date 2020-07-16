@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login &#8211; Easy Code</title>
+  <link type="image/x-icon" href="images/uploads/2019/06/ECS-logo-e1559539089668.jpg" rel="icon" />
+  <link rel="icon" href="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-32x32.jpg" sizes="32x32" />
+  <link rel="icon" href="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-192x192.jpg" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed"
+    href="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-180x180.jpg" />
+  <meta name="msapplication-TileImage" content="images/uploads/2019/06/cropped-ECS-logo-e1559539089668-1-270x270.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+    }
+
+    input {
+      outline: none;
+      border: none;
+    }
+
+    .container-login100 {
+      width: 100%;
+      min-height: 100vh;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+      background: #22c0e3;
+    }
+
+    .wrap-login100 {
+      width: 500px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+      -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .login100-form {
+      width: 100%;
+    }
+
+    .login100-form-title {
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 30px;
+      color: #555555;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .validate-input {
+      position: relative;
+    }
+
+    .wrap-input100 {
+      width: 100%;
+      position: relative;
+      background-color: #fff;
+      border: 1px solid #e6e6e6;
+    }
+
+    input.input100 {
+      height: 68px;
+      padding: 0 25px 0 25px;
+    }
+
+    .input100 {
+      display: block;
+      width: 100%;
+      background: transparent;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      color: #666666;
+      line-height: 1.2;
+    }
+
+    .focus-input100-1,
+    .focus-input100-2 {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    .container-login100-form-btn {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .m-t-20 {
+      margin-top: 20px;
+    }
+
+    .p-r-55 {
+      padding-right: 55px;
+    }
+
+    .p-l-55 {
+      padding-left: 55px;
+    }
+
+    .p-b-50 {
+      padding-bottom: 50px;
+    }
+
+    .p-t-65 {
+      padding-top: 65px;
+    }
+
+    .login100-form-btn:hover {
+      background-color: #2f73a3;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    .login100-form-btn {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      width: 100%;
+      height: 60px;
+      background-color: #22c0e3;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #fff;
+      line-height: 1.2;
+      text-transform: uppercase;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      transition: all 0.4s;
+    }
+
+    button {
+      outline: none !important;
+      border: none;
+      background: transparent;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .p-b-4 {
+      padding-bottom: 4px;
+    }
+
+    .p-t-45 {
+      padding-top: 45px;
+    }
+
+    .text-center {
+      text-align: center !important;
+    }
+
+    .txt1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.4;
+      color: #999999;
+    }
+
+    .hov1:hover {
+      text-decoration: underline;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    .txt2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.4;
+      color: #22c0e3;
+    }
+
+    a {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+    }
+
+    [role=button],
+    a,
+    area,
+    button,
+    input,
+    label,
+    select,
+    summary,
+    textarea {
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+    }
+
+    .login100-form-title {
+      display: block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 30px;
+      color: #555555;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .p-b-33 {
+      padding-bottom: 33px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-login100">
+    <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
+      <form class="login100-form validate-form" action="" method="POST">
+        <span class="login100-form-title p-b-33">
+          Account Login
+        </span>
+        <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+          <input class="input100" type="text" name="email" placeholder="Email" />
+          <span class="focus-input100-1"></span>
+          <span class="focus-input100-2"></span>
+        </div>
+        <div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
+          <input class="input100" type="password" name="pass" placeholder="Password" />
+          <span class="focus-input100-1"></span>
+          <span class="focus-input100-2"></span>
+        </div>
+        <div class="container-login100-form-btn m-t-20">
+          <button class="login100-form-btn">
+            Sign in
+          </button>
+        </div>
+        <!--
+<div class="text-center p-t-45 p-b-4">
+  <span class="txt1">
+    Create an account?
+  </span>
+  <a href="register.html" class="txt2 hov1">
+    Sign up
+  </a>
+</div>
+        -->
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
